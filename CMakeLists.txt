@@ -122,7 +122,7 @@ option(SOFA_WITH_DEVTOOLS "Compile with developement extra features." ON)
 option(SOFA_WITH_THREADING "Compile sofa with thread-safetiness support (PARTIAL/EXPERIMENTAL)" ON)
 
 ### Experimental
-option(SOFA_WITH_EXPERIMENTAL_FEATURES "Compile sofa with exprimental features regarding sparse matrices treatments under mappings" OFF)
+option(SOFA_WITH_EXPERIMENTAL_FEATURES "Compile sofa with exprimental features regarding sparse matrices treatments under mappings" ON)
 
 ### Testing
 option(SOFA_BUILD_TESTS "Compile the automatic tests for Sofa, along with the gtest library." ON)
@@ -188,10 +188,10 @@ add_subdirectory(SofaGui)
 sofa_add_plugin( applications/plugins/SofaPython SofaPython )
 
 ## Scene creator option
-option(SOFA_BUILD_SCENECREATOR "Compile the C++ API located in applications/plugins/SceneCreator" OFF)
+option(SOFA_BUILD_SCENECREATOR "Compile the C++ API located in applications/plugins/SceneCreator" ON)
 
 ## Tutorials option
-option(SOFA_BUILD_TUTORIALS "Build (most of) the tutorials available." OFF)
+option(SOFA_BUILD_TUTORIALS "Build (most of) the tutorials available." ON)
 
 # Activate SceneCreator when required
 if(SOFA_BUILD_TESTS OR SOFA_BUILD_TUTORIALS)
@@ -244,7 +244,7 @@ if(NOT "${SOFA_EXTERNAL_DIRECTORIES}" STREQUAL "")
 endif()
 
 ### Deprecated components
-option(SOFA_WITH_DEPRECATED_COMPONENTS "Compile SOFA with all deprecated components" ON)
+option(SOFA_WITH_DEPRECATED_COMPONENTS "Compile SOFA with all deprecated components" OFF)
 if(SOFA_WITH_DEPRECATED_COMPONENTS)
     message(DEPRECATION "Deprecated components are activated (SOFA_WITH_DEPRECATED_COMPONENTS variable is ON)")
 endif()
@@ -342,7 +342,7 @@ if(TEMP_CPACK_COMPONENTS_ALL)
     set(CPACK_COMPONENTS_ALL ${TEMP_CPACK_COMPONENTS_ALL})
 endif()
 
-option(SOFA_BUILD_RELEASE_PACKAGE "Run package specific configure" OFF)
+option(SOFA_BUILD_RELEASE_PACKAGE "Run package specific configure" ON)
 if(SOFA_BUILD_RELEASE_PACKAGE)
     message("Using package.cmake")
     include( "package.cmake" )
