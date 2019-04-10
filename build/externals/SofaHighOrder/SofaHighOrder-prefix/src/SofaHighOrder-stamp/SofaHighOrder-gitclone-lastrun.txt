@@ -1,3 +1,0 @@
-repository='https://github.com/sofa-framework/plugin.HighOrder'
-module=''
-tag=''

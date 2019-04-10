@@ -12,6 +12,7 @@
 # Ignore all objets and archives
 #*.[oa]
 
+build/
 
 ########## GITIGNORE SOFA ##############
 

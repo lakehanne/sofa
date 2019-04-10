@@ -234,7 +234,7 @@ if(SOFA_BUILD_TUTORIALS)
 endif()
 
 ## Build external projects at the same time
-set(SOFA_EXTERNAL_DIRECTORIES "/home/lex/sofa/STLIB;/home/lex/sofa/SoftRobots" CACHE STRING "list of paths separated by ';'")
+set(SOFA_EXTERNAL_DIRECTORIES "../../STLIB;../../SoftRobots" CACHE STRING "list of paths separated by ';'")
 if(NOT "${SOFA_EXTERNAL_DIRECTORIES}" STREQUAL "")
     foreach(dir ${SOFA_EXTERNAL_DIRECTORIES})
         get_filename_component(name ${dir} NAME) # Get the name of the actual directory
