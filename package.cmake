@@ -24,12 +24,12 @@ endmacro()
 setSofaString(CMAKE_BUILD_TYPE Release)
 
 setSofaOption(APPLICATION_RUNSOFA ON)
-setSofaOption(APPLICATION_MODELER OFF)
+setSofaOption(APPLICATION_MODELER ON)
 
 setSofaOption(SOFA_USE_MASK OFF)
 
 setSofaOption(SOFA_BUILD_TESTS OFF)
-setSofaOption(SOFA_BUILD_TUTORIALS OFF)
+setSofaOption(SOFA_BUILD_TUTORIALS ON)
 
 # Set all plugins OFF
 get_cmake_property(_variableNames VARIABLES)
@@ -46,7 +46,7 @@ setSofaOption(PLUGIN_CIMGPLUGIN ON)
 setSofaOption(PLUGIN_SOFAPYTHON ON)
 setSofaOption(PLUGIN_SOFAMISCCOLLISION ON)
 
-# Copy resources files (etc/, share/, examples/) when installing 
+# Copy resources files (etc/, share/, examples/) when installing
 setSofaOption(SOFA_INSTALL_RESOURCES_FILES ON)
 
 # install GTest even if SOFA_BUILD_TESTS=OFF

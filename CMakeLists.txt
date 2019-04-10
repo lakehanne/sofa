@@ -122,7 +122,7 @@ option(SOFA_WITH_DEVTOOLS "Compile with developement extra features." ON)
 option(SOFA_WITH_THREADING "Compile sofa with thread-safetiness support (PARTIAL/EXPERIMENTAL)" ON)
 
 ### Experimental
-option(SOFA_WITH_EXPERIMENTAL_FEATURES "Compile sofa with exprimental features regarding sparse matrices treatments under mappings" OFF)
+option(SOFA_WITH_EXPERIMENTAL_FEATURES "Compile sofa with exprimental features regarding sparse matrices treatments under mappings" ON)
 
 ### Testing
 option(SOFA_BUILD_TESTS "Compile the automatic tests for Sofa, along with the gtest library." ON)
@@ -137,7 +137,7 @@ option(SOFA_NINJA_BUILD_POOLS "Activate the Ninja build pools feature, to limit 
 
 ### Sofa using type double or float or both
 set(SOFA_FLOATING_POINT_TYPE both CACHE STRING
-    "Type used for floating point values in SOFA. It actually determines:
+    "Type used for floating pOFFoint values in SOFA. It actually determines:
     - what template instanciations will be compiled (via the definition of the
     SOFA_FLOAT and SOFA_DOUBLE macros)
     - what is the type behind the 'SReal' typedef used throughout SOFA. (If 'both'
@@ -188,10 +188,10 @@ add_subdirectory(SofaGui)
 sofa_add_plugin( applications/plugins/SofaPython SofaPython )
 
 ## Scene creator option
-option(SOFA_BUILD_SCENECREATOR "Compile the C++ API located in applications/plugins/SceneCreator" OFF)
+option(SOFA_BUILD_SCENECREATOR "Compile the C++ API located in applications/plugins/SceneCreator" ON)
 
 ## Tutorials option
-option(SOFA_BUILD_TUTORIALS "Build (most of) the tutorials available." OFF)
+option(SOFA_BUILD_TUTORIALS "Build (most of) the tutorials available." ON)
 
 # Activate SceneCreator when required
 if(SOFA_BUILD_TESTS OR SOFA_BUILD_TUTORIALS)
@@ -234,7 +234,7 @@ if(SOFA_BUILD_TUTORIALS)
 endif()
 
 ## Build external projects at the same time
-set(SOFA_EXTERNAL_DIRECTORIES "" CACHE STRING "list of paths separated by ';'")
+set(SOFA_EXTERNAL_DIRECTORIES "/home/lex/sofa/STLIB;/home/lex/sofa/SoftRobots" CACHE STRING "list of paths separated by ';'")
 if(NOT "${SOFA_EXTERNAL_DIRECTORIES}" STREQUAL "")
     foreach(dir ${SOFA_EXTERNAL_DIRECTORIES})
         get_filename_component(name ${dir} NAME) # Get the name of the actual directory

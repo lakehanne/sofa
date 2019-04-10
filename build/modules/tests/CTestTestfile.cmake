@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: /home/lex/sofa/v18.06/src/modules/tests
+# Build directory: /home/lex/sofa/v18.06/src/build/modules/tests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+subdirs("tests/SofaBaseCollision")
+subdirs("tests/SofaBaseLinearSolver")
+subdirs("tests/SofaBaseMechanics")
+subdirs("tests/SofaBaseTopology")
+subdirs("tests/SofaBaseVisual")
+subdirs("tests/SofaDeformable")
+subdirs("tests/SofaEngine")
+subdirs("tests/SofaExplicitOdeSolver")
+subdirs("tests/SofaImplicitOdeSolver")
+subdirs("tests/SofaLoader")
+subdirs("tests/SofaMeshCollision")
+subdirs("tests/SofaRigid")
+subdirs("tests/SofaSimpleFem")
+subdirs("tests/simulation")
+subdirs("tests/frameworkextra")
+subdirs("tests/SofaComponentBase")
+subdirs("tests/SofaBoundaryCondition")
+subdirs("tests/SofaConstraint")
+subdirs("tests/SofaOpenglVisual")
+subdirs("tests/SofaGeneralEngine")
+subdirs("tests/SofaGeneralExplicitOdeSolver")
+subdirs("tests/SofaGeneralImplicitOdeSolver")
+subdirs("tests/SofaGeneralTopology")
+subdirs("tests/SofaGeneralSimpleFem")
+subdirs("tests/SofaGraphComponent")
+subdirs("tests/SofaMiscFem")
+subdirs("tests/SofaMisc")
+subdirs("tests/SofaMiscMapping")
+subdirs("tests/SofaMiscSolver")
+subdirs("tests/SofaMiscTopology")
+subdirs("tests/SofaExporter")

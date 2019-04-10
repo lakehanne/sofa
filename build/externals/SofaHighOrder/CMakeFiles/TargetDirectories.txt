@@ -1,0 +1,3 @@
+/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/CMakeFiles/rebuild_cache.dir
+/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/CMakeFiles/SofaHighOrder.dir
+/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/CMakeFiles/edit_cache.dir

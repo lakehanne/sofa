@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/CMakeFiles/SofaHighOrder"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/CMakeFiles/SofaHighOrder.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/CMakeFiles/SofaHighOrder-complete.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-install.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-mkdir.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-download.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-update.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-patch.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-configure.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-build.rule"
+		},
+		{
+			"file" : "/home/lex/sofa/v18.06/src/build/externals/SofaHighOrder/SofaHighOrder-prefix/src/SofaHighOrder-stamp/SofaHighOrder-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"SofaHighOrder"
+		],
+		"name" : "SofaHighOrder"
+	}
+}
